@@ -1,0 +1,30 @@
+h1 {
+    color: greenyellow;
+    font-size: 45px;
+    fill-rule: evenodd;
+    width: 2;
+}
+p{
+    color: rgba(0, 0, 255, 0.76);
+    font-size: 25px;
+}
+
+#input {
+    color: chocolate;
+    font-size: 10px;
+}
+#title {
+    color: rgb(158, 25, 25);
+    font-size: 45px;
+}
+span{
+    color: red;
+    font-size: 30px;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: -moz-linear-gradient();
+}
+*{
+    
+    background: darkred;
+}
