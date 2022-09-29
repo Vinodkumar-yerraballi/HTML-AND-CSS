@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+        .box{
+            background-color: red;
+            width: 1000px;
+            height: 1500px;
+            position: relative;
+            display: inline-block;
+            animation-name: myframes;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: forwards;
+            animation-play-state: running;
+
+        }
+        @keyframes myframes{
+
+            from{
+                height: 200px;
+                background-color: blue;
+            }
+            25%{
+                background-color: darkmagenta;
+            }
+            50%{
+                background-color: peru;
+                background-image: url(wp2777161-swiss-landscape-wallpapers.jpg);
+            }
+
+            75%{
+                background-color: royalblue;
+            }
+
+            to{
+                height: 500px;
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
