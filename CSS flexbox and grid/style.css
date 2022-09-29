@@ -1,0 +1,53 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+header,aside,main,footer{
+    padding: 16px;
+    text-align: center;
+    display: grid;
+}
+
+footer{
+    padding: 16px;
+    align-items: center;
+}
+header{
+    background-color: purple;
+    grid-template-rows: 60px;
+}
+aside{
+    background-color: brown;
+    grid-template-rows: 60px;
+}
+.Navigation-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+.Navigation-item a {
+    text-decoration: none;
+    color: aquamarine; 
+
+}
+.Navigation-item a:hover,
+.Navigation-item a:active{
+    color: darkslategray;
+
+}
+h1{
+    text-align: center;
+    text-decoration: honeydew;
+    display: flexbox;
+
+}
