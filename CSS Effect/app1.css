@@ -1,0 +1,36 @@
+body{
+    background-size: cover;
+    background-image: url(dylan-pirozek-RzgGMz2kU94-unsplash.jpg);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: aqua;
+    opacity: .9;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+}
