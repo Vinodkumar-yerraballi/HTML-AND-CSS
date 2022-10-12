@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array tutorial</title>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <script> 
+        let cars= ["BMW","volvo","honda"];
+        document.getElementById("demo").innerHTML=cars;
+
+        let bmw = cars[0];
+        document.getElementById("demo").innerHTML=bmw;
+
+        let len =cars.length;
+        document.getElementById("demo").innerHTML=len;
+
+        let last=cars[cars.length-1];
+        document.getElementById("demo").innerHTML=last;
+        //Loop over array
+        // in the loop the variables get the values example bmw=0,volvo=1 like that
+
+        cars.forEach((item,index,array) =>{console.log(item,index);});
+        //Array methods 
+        //toString() is method is used to convert array to string
+        //in the method type changes
+        document.getElementById("demo").innerHTML=cars.toString();
+        //Pop method is used for remove the last elemts form the array
+        let last1=cars.pop();
+        document.getElementById("demo").innerHTML=last1;
+        let last2=cars[cars.length-1];
+        console.log(last2);
+
+        // push() method is used to add the element end of the array
+        cars.push("Audi");
+        document.getElementById("demo").innerHTML=cars;
+        // shift() method is used for remove the first element
+
+        cars.shift();
+        document.getElementById("demo").innerHTML=cars;
+        // unshift() method used for add an element the beging of the array
+        // is that increase the index
+        cars.unshift("lamborigin");
+        document.getElementById("demo").innerHTML=cars;
+        // contact method used  to merge to arrays
+        let computer=["windows","mac","linux"]
+        let all=cars.concat(computer);
+        document.getElementById("demo").innerHTML=all;
+        // sort methode used to sort the array in ascending order
+        all.sort();
+        document.getElementById("demo").innerHTML=all;
+        // reverse method used to reverse the elements in the array
+        all.reverse();
+        document.getElementById("demo").innerHTML=all;
+        // map method creates a new array and performs a function on each array element
+        // what happend in the function the every element in the array muliply the give elemets
+        let num1=[2,5,6,7,8,9,1]
+        let num2=num1.map(multiply);
+        function multiply(value){
+            return value*2;
+        }
+        document.getElementById("demo").innerHTML=num2;
+        // filter method takes each elements in an araay and it applies a conditional statemetn
+        // in the function the arraay given the condition values givien below
+        let num3 =num1.filter(comp);
+        function comp(value){
+            return value>4;
+        }
+        document.getElementById("demo").innerHTML=num3;
+        // Reduce the method used to array of values down to just one values using a function
+        // what happend in the method  we add the all elements in the araay and given the values
+        
+        let num4=num1.reduce(sum);
+        function sum(total,value){
+            return total+value;
+
+        }
+        document.getElementById("demo").innerHTML=num4;
+    </script>
+</body>
+</html>
