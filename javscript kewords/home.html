@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var value=50
+        function My_function(){
+            var value=100
+            alert("value:"+value)
+            alert("This value :"+this.value)
+        }
+        My_function()
+    </script> 
+    <script>
+        const random={
+            name:"jhon",
+            info(){
+                console.log("Hi My name is " + this.name)
+            }
+        }
+        random.info()
+    </script>
+    <script>
+        const random={
+            name:"jhon",
+            video:["java","this","keyword"],
+            info(){
+                this.video.forEach(function(tag){
+                    console.log(this.name,tag)
+                })
+            }
+        }
+        random.info()
+    </script>
+</body>
+</html>

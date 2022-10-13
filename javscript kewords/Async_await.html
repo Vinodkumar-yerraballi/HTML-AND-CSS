@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let result=function(score){
+            return new Promise(function(resolve,reject){
+                console.log("Caluculation results....")
+                if(score>50)
+                    resolve("Congratulation! you have passed")
+                else
+                    reject("you have failed")
+            })
+        }
+        let grade=function(response){
+            return new Promise(function(resolve,reject){
+                console.log("Caluculating your grade...")
+                resolve("your grade is A."+response)
+            })
+        }
+        result(80).then(response =>{
+            console.log("Result recevied")
+            return grade(response)
+        }).then(finalgrade =>{
+            console.log(finalgrade)
+        }).catch(err =>{
+            console.log(err)
+        })
+        async function Caluculating(){
+            try{
+            const response = await result (90)
+            console.log("Result recevied")
+            const finalgrade =await grade(response)
+            console.log(finalgrade)
+        }
+        catch(err){
+            console.log(err)
+        }
+        }
+        Caluculating()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

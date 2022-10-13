@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailvalidation</title>
+    <script>
+        function Validate(){
+            var mail=document.getElementById("text").value;
+
+            var regx = /^([a-zA-z0-9\._]+)@([a-zA-z0-9])+.([a-z]+)(.[a-z]+)?$/
+
+            if(regx.text(mail)){
+                alert("you have provide valid Email id")
+                return true
+            }
+            else{
+                alert("Sorry ! Please incorrect Email Id")
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input id="text" placeholder="Email" type="text"><br>
+        <button onclick="Validate()" type="button"> Submit</button>
+    </form>
+</body>
+</html>

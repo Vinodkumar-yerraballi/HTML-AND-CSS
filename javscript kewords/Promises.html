@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let car =new Promise(function(resolve,reject){
+        //     fuel_fullTank=true;
+        //     if(fuel_fullTank)
+        //        resolve()
+        //     else
+        //        reject()
+        // });
+        // car.then(function(){
+        //     document.write("The fuel tank is full.Happy journy")
+        // }).catch(function(){
+        //     document.write("the fuel tank is not empty.")
+        // })
+
+        let empty_tank=function(){
+            return new Promise(function(resolve,reject){
+                resolve("The car doesn't is over heating")
+            })
+        }
+        let engine=function(msg){
+            return new Promise(function(resolve,reject){
+                resolve(msg+"The engine is over heating")
+            })
+        }
+        let travel=function(msg){
+            return new Promise(function(resolve,reject){
+                resolve(msg+"The car is not safe for travelling")
+            })
+        }
+        empty_tank().then(function(result){
+            return engine(result)
+        }).then(function(result){
+            return travel(result)
+        }).then(function(result){
+            console.log("Done"+ result)
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

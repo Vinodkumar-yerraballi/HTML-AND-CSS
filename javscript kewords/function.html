@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <!-- <script>
+        function my_function(val){
+            document.getElementById("demo").innerHTML=val*val
+        }
+        my_function(10)
+    </script>
+    <script>
+        let x=function(){
+            alert("Hello!")
+        }
+        let y=x
+        document.getElementById("demo").innerHTML=y()
+    </script> -->
+    <script>
+        var my_function=new Function("a","b","return a+b")
+        var x= my_function(2,13);
+        document.getElementById("demo").innerHTML="This sum is"+x
+    </script>
+    <script>
+        (function(){
+            alert("Hello welcome")
+        })();
+    </script>
+    <script>
+        function product(a,b){
+            return a*b
+        }
+        let y= product(7,15)
+        document.getElementById("demo").innerHTML="The product is "+y
+    </script>
+</body>
+</html>
