@@ -1,0 +1,33 @@
+.bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.card {
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.main-heading {
+    font-family: "Roboto";
+}
+.paragraph {
+    font-family: "Roboto";
+}
+.button {
+    height: 36px;
+    width: 138px;
+    background-color: #25b1cc;
+    color: white;
+    border-radius: 20px;
+    border-width: 0px;
+}
+.button-green{
+    background-color: Red;
+}
+
+.button-orange{
+    background-color: orange;
+}
