@@ -1,0 +1,25 @@
+.card {
+    text-align: center;
+    color: red;
+    background-color: lightblue;
+}
+
+.main_heading {
+    color: blue;
+    font-family: Monoton;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.paragraph {
+    color: Yellow;
+    font-weight: bold;
+    font-style:italic;
+}
+
+.button {
+    color: white;
+    background-color: black;
+}
