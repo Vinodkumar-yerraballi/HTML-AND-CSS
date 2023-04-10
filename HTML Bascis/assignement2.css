@@ -1,0 +1,22 @@
+.bg_container{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.card{
+    background-color:white;
+    text-align: center;
+    /* Top of the pages shourd be curved shape */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 5px;
+}
+.button{
+    height: 36px;
+    width: 136px;
+    color: black;
+    background-color: #03fcd7;
+    /* The button shape will be curved */
+    border-radius: 22px;
+    border-width: 0px;
+}

@@ -1,0 +1,21 @@
+.card {
+  
+    text-align: center;
+    /* This is do image not repeted it's fixed */
+    background-size: cover;
+    background-color: lightblue;
+    /* it's boxplot model 100vh mean it's covert the all desktop size either moblie,laptop and tab */
+    height: 100vh;
+    /* This will be remove because the image is fixed */
+    /* widhth: 100vh */
+    background-image:url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ocean.jpg") ;
+  }
+  
+  .main-heading {
+    color: blue;
+    border: 100cm;
+  }
+  
+  .paragraph {
+    color: grey;
+  }
